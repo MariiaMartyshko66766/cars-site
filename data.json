@@ -1,0 +1,6 @@
+[
+  { "brand": "BMW", "model": "M3", "year": 2022 },
+  { "brand": "Audi", "model": "RS6", "year": 2021 },
+  { "brand": "Mercedes", "model": "AMG GT", "year": 2023 },
+  { "brand": "Toyota", "model": "Supra", "year": 2020 }
+]
