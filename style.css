@@ -1,46 +1,18 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Arial;
-  background: #f3f4f6;
+  background: #f4f4f4;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
+  background: black;
   color: white;
-  padding: 15px 20px;
-  position: relative;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-}
-
-.burger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-.header {
+  padding: 15px;
   text-align: center;
-  padding: 25px;
-  background: white;
-  margin: 15px;
-  border-radius: 10px;
+}
+
+h1, p {
+  text-align: center;
 }
 
 .form {
@@ -48,50 +20,29 @@ body {
   gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 
-.form input {
+input, button {
   padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.form button {
-  padding: 10px 15px;
-  border: none;
-  background: black;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 10px;
   padding: 20px;
 }
 
 .card {
   background: white;
   padding: 15px;
-  border-radius: 12px;
-  transition: 0.2s;
-  cursor: pointer;
+  border-radius: 10px;
 }
 
-.card:hover {
-  transform: scale(1.03);
-}
-
-.delete {
-  margin-top: 10px;
+button {
   background: red;
   color: white;
   border: none;
-  padding: 5px;
-  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -100,23 +51,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .menu {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #111;
+  .form {
     flex-direction: column;
-    width: 150px;
-    display: none;
-    padding: 10px;
+    align-items: center;
   }
-
-  .menu.active {
-    display: flex;
-  }
-
-  .burger {
-    display: block;
-  }
-}
 }
